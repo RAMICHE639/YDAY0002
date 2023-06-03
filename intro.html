@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: black;
+    }
+    
+    .intro {
+      background-color: black;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      animation: fadeOut 5s ease-in-out forwards;
+    }
+    
+    .logo {
+      display: inline-block;
+      animation: rotate 5s infinite;
+    }
+
+
+
+    
+    .logo img {
+      width: 150px;
+      height: 150px;
+    }
+    
+    @keyframes fadeOut {
+      0% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 0;
+        display: none;
+      }
+    }
+    
+    @keyframes rotate {
+      0% {
+        transform: rotate(0deg);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="intro">
+    <div class="logo">
+      <img src="images/logo.png" alt="alta logo">
+    </div>
+
+    
+  </div>
+
+  
+  <script>
+    // Wait for the animation to complete
+    setTimeout(function() {
+      // Redirect to the main page or perform any other action
+      window.location.href = "ABOUT_YDAY/index.html";
+    }, 2000); // Adjust the duration (in milliseconds) to match your animation length
+  </script>
+</body>
+</html>
